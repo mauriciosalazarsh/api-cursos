@@ -1,6 +1,7 @@
-FROM python:3.9-slim
-WORKDIR /code
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+FROM python:3-slim
+WORKDIR /programas/api-employees
+RUN pip3 install fastapi
+RUN pip3 install pydantic
+RUN pip3 install mysql-connector-python
 COPY . .
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["fastapi", "run", "./main.py", "--port", "8000"]
