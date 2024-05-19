@@ -1,0 +1,14 @@
+CREATE SCHEMA api_cursos DEFAULT CHARACTER SET utf8mb4;
+
+USE api_cursos;
+
+CREATE TABLE cursos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_del_curso VARCHAR(255),
+    descripcion TEXT,
+    id_profesor INT,
+    FOREIGN KEY (id_profesor) REFERENCES profesores(id)
+);
+
+INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Matemáticas Avanzadas', 'Curso avanzado de matemáticas.', 1);
+INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Física Moderna', 'Introducción a la física cuántica.', 2);
