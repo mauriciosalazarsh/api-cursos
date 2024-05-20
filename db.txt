@@ -7,7 +7,9 @@ CREATE TABLE cursos (
     nombre_del_curso VARCHAR(255),
     descripcion TEXT,
     id_profesor INT,
+    FOREIGN KEY (id_profesor) REFERENCES profesores(id)
 );
 
+
+INSERT INTO profesores (nombre, especialidad) VALUES ('Juan Perez', 'Matemáticas');
 INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Matemáticas Avanzadas', 'Curso avanzado de matemáticas.', 1);
-INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Física Moderna', 'Introducción a la física cuántica.', 2);
