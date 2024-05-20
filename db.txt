@@ -7,7 +7,6 @@ CREATE TABLE cursos (
     nombre_del_curso VARCHAR(255),
     descripcion TEXT,
     id_profesor INT,
-    FOREIGN KEY (id_profesor) REFERENCES profesores(id)
 );
 
 
