@@ -9,6 +9,12 @@ CREATE TABLE cursos (
     id_profesor INT
 );
 
+INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Álgebra Lineal', 'Curso sobre conceptos y técnicas de álgebra lineal.', 2);
 
-INSERT INTO profesores (nombre, especialidad) VALUES ('Juan Perez', 'Matemáticas');
-INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Matemáticas Avanzadas', 'Curso avanzado de matemáticas.', 1);
+INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Cálculo Diferencial', 'Introducción a los conceptos de derivadas y sus aplicaciones.', 3);
+
+INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Física General', 'Exploración de los principios básicos de la física.', 4);
+
+INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Programación en Python', 'Curso práctico sobre programación en Python para principiantes y avanzados.', 5);
+
+INSERT INTO cursos (nombre_del_curso, descripcion, id_profesor) VALUES ('Estadística Aplicada', 'Análisis estadístico y su aplicación en diversos campos.', 6);
