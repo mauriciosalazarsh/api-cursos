@@ -6,7 +6,7 @@ CREATE TABLE cursos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre_del_curso VARCHAR(255),
     descripcion TEXT,
-    id_profesor INT,
+    id_profesor INT
 );
 
 
